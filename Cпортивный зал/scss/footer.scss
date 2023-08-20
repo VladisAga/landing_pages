@@ -1,0 +1,140 @@
+footer {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #3DBFC1;
+    padding: 20px 0;
+}
+
+.footer_content {
+    display: flex;
+    max-width: 1830px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.logo_and_links {
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        img {
+            height: 100%;
+            width: 150px;
+            display: inline-block;
+        }
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 3px;
+        align-items: flex-start;
+
+        a {
+            text-decoration: none;
+            @include textValue('Roboto', 400, 24px);
+            color: black;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.media_and_free_lesson {
+    display: flex;
+    column-gap: 180px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: center;
+}
+
+.text_and_media {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    p {
+        @include textValue('Roboto', 400, 24px);
+        margin: 0;
+        align-self: center;
+    }
+}
+
+.media {
+    display: flex;
+    column-gap: 15px;
+    align-self: center;
+
+    div:hover .svg_hover_change {
+        fill: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.modal-body {
+    background-color: #3DBFC1;
+
+    form {
+        @include textValue('Roboto', 400, 24px);
+        padding-left: 33px;
+        input {
+            border: none;
+        }
+        
+    }
+}
+
+.modal-content {
+    width: 376px;
+    height: 480px;
+}
+
+.modal-dialog {
+    width: 376px;
+    height: 480px;
+}
+
+.modal_stock {
+    height: 557px;
+}
+
+.top {
+    @include textValue('Roboto', 400, 24px);
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.second_p {
+    margin-top: 25px;
+}
+
+.close_and_save {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 273.33px;
+    column-gap: 10px;
+}
+
+.back {
+    background-color:  #6c757d;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    @include textValue('Roboto', 400, 18px);
+    padding: 8px;
+}
+
+
+.back:hover {
+    background-color: #197477;
+}
+
+

@@ -1,0 +1,652 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    margin: 0;
+}
+
+$backColorTopic: #439A97;
+
+@mixin textValue($family, $weight, $size) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+%valueForTopiic {
+    margin: 0 auto;
+    background-color: $backColorTopic;
+    max-width: 1280px;
+    padding: 15px;
+}
+
+%contentArea {
+    max-width: 930px;
+    margin: 52px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+%blockAfterPhoto {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 277px;
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%invisibleBtn {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: none;
+    opacity: 0;
+    padding: 0;
+}
+
+@import './fonts.scss';
+@import './header.scss';
+@import './footer.scss';
+
+main {
+    background-color: #F3FFFC;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    @include textValue('Montserrat', 400, 36px);
+    margin: 0 auto 58px;
+    padding-top: 58px;
+    text-align: center;
+
+    span {
+        font-weight: 400;
+        font-style: italic;
+    }
+}
+
+.big_photo {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.about_us_box,
+.services_box,
+.gallery_box,
+.contacts_box,
+.booking_box {
+    @extend %valueForTopiic;
+
+    p {
+        @include textValue('Montserrat', 500, 40px);
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.about_us_content {
+    @extend %contentArea;
+    column-gap: 23px;
+    row-gap: 23px;
+}
+
+.about_us_content div:first-child {
+    max-width: 353px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.text_about_us {
+    max-width: 554px;
+
+    & p:first-child {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+
+    & p:first-child+p {
+        margin-bottom: 30px
+    }
+
+    p {
+        @include textValue('Montserrat', 400, 22px);
+        text-align: justify;
+    }
+}
+
+.services_content {
+    @extend %contentArea;
+    column-gap: 49px;
+    row-gap: 43px;
+
+    div {
+        max-width: 277px;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            @include textValue('Montserrat', 400, 21px);
+            margin-top: 19px;
+            text-align: center;
+        }
+    }
+
+    & div:nth-child(2) {
+        p {
+            font-size: 19.193px;
+        }
+    }
+}
+
+.box_2_photo {
+    position: relative;
+
+
+    div {
+        position: relative;
+        transition-duration: 0.5s;
+        z-index: 2;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    .block_after_photo {
+        @extend %blockAfterPhoto;
+
+        p {
+            margin: 0;
+            @include textValue('Montserrat', 400, 20px);
+            width: 157px;
+            color: #F3FFFC;
+        }
+
+        .baby {
+            width: 200px;
+        }
+
+        .business {
+            width: 199px;
+        }
+    }
+}
+
+.first_after {
+    background-image: url('../images/background_img/bedroom.png');
+}
+
+.second_after {
+    background-image: url('../images/background_img/wedding.png');
+}
+
+.third_after {
+    background-image: url('../images/background_img/fire.png');
+}
+
+.fourth_after {
+    background-image: url('../images/background_img/playground.png');
+}
+
+.fifth_after {
+    background-image: url('../images/background_img/woman_micro.png');
+}
+
+.sixth_after {
+    background-image: url('../images/background_img/bus.png');
+}
+
+.gallery_content {
+    max-width: 930px;
+    margin: 52px auto;
+}
+
+.grid_box {
+    gap: 39px;
+    display: grid;
+    justify-content: center;
+    grid-template: 256px 274px 196px/277px 346px 229px;
+}
+
+.first_photo {
+    grid-column: 1;
+    grid-row: 1/3;
+    position: relative;
+
+    img {
+        height: 569px;
+        position: relative;
+    }
+
+    .invisible_btn {
+        @extend %invisibleBtn;
+    }
+}
+
+.img_modal {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.modal-content {
+    background-color: none;
+}
+
+.btn-close {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+}
+
+.second_photo {
+    grid-column: 2;
+    position: relative;
+
+    img {
+        height: 256px;
+        position: relative;
+    }
+
+    .invisible_btn {
+        @extend %invisibleBtn;
+    }
+}
+
+.third_photo {
+    grid-column: 3;
+    position: relative;
+
+    img {
+        height: 256px;
+        position: relative;
+    }
+
+    .invisible_btn {
+        @extend %invisibleBtn;
+        top: 0;
+    }
+}
+
+
+.fourh_photo {
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+
+    img {
+        height: 274px;
+        position: relative;
+    }
+
+    .invisible_btn {
+        @extend %invisibleBtn;
+    }
+}
+
+.fifth_photo {
+    grid-column: 3;
+    grid-row: 2;
+    position: relative;
+
+    img {
+        height: 274px;
+        position: relative;
+    }
+
+    .invisible_btn {
+        @extend %invisibleBtn;
+    }
+}
+
+.sixth_photo {
+    grid-column: 1;
+    grid-row: 3;
+    position: relative;
+
+    img {
+        height: 196px;
+        position: relative;
+    }
+
+    .invisible_btn {
+        @extend %invisibleBtn;
+    }
+}
+
+.seventh_photo {
+    grid-column: 2/4;
+    grid-row: 3;
+    position: relative;
+
+    img {
+        height: 196px;
+        position: relative;
+    }
+
+    .invisible_btn {
+        @extend %invisibleBtn;
+    }
+}
+
+.contact_box {
+    @extend %contentArea;
+    column-gap: 16px;
+    row-gap: 20px;
+}
+
+.contact_text_area {
+    display: flex;
+    flex-direction: column;
+    row-gap: 17px;
+    margin-top: 18px;
+
+    div {
+        display: flex;
+        column-gap: 11px;
+
+        p {
+            @include textValue('Montserrat', 400, 20px);
+            
+            margin: 0;
+
+            &:nth-child(2) {
+                &:hover {
+                    a {
+                        color: #228280;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+.work_time {
+    @include textValue('Montserrat', 400, 24px);
+    margin-top: 50px;
+    line-height: 1.3;
+}
+
+.booking_area {
+    @extend %contentArea;
+    margin: 58px auto 0;
+    padding-bottom: 58px;
+    max-width: 574px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 28px;
+        width: 100%;
+
+        div {
+            display: flex;
+            justify-content: center;
+
+            input {
+                width: 100%;
+                background-color: #97DECE;
+                border: none;
+                padding: 14px 0 10px 0;
+
+                option {
+                    @include textValue('Montserrat', 300, 20px);
+                }
+            }
+        }
+
+        input::placeholder {
+            @include textValue('Montserrat', 300, 20px);
+            font-style: italic;
+            color: black;
+            text-align: center;
+        }
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        @include textValue('Montserrat', 300, 20px);
+    }
+
+    input:hover::placeholder {
+        transform: scale(1.1);
+    }
+
+    input:focus {
+        font-family: 'Montserrat';
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 11px;
+        max-width: 212px;
+        background-color: #62B6B7;
+        border-radius: 20px;
+        padding: 8px 0;
+        @include textValue('Montserrat', 300, 20px);
+        font-style: italic;
+        transition-duration: 0.3s;
+
+        &:hover {
+            background-color: #228280;
+            transform: scale(1.1);
+            color: #97DECE;
+        }
+    }
+}
+
+.qwe {
+    display: none;
+    position: absolute;
+    top: 847px;
+    right: 1vw;
+    bottom: 0;
+    z-index: 6;
+
+    div {
+        position: sticky;
+        top: 75vh;
+        position: -webkit-sticky;
+    }
+
+    a {
+        width: 70px;
+        height: 70px;
+        background-color: rgba(24, 108, 111, 0.5);
+        border-radius: 90px;
+        display: inline-block;
+        display: flex;
+    }
+}
+
+.strelka-top-2 {
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    fill: rgba(237, 233, 233, 0.8);
+    stroke-width: 0.6;
+    stroke: rgba(237, 233, 233, 0.8);
+    transition: fill 0.5s ease-out;
+    cursor: pointer;
+    transform: rotate(270deg);
+}
+
+
+@media all and (max-width: 3500px) {
+    .qwe {
+        display: block;
+    }
+}
+
+@media all and (max-width:1160px) {
+    .footer_content {
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+}
+
+@media all and (max-width:960px) {
+    .head_content {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:950px) {
+    .grid_box {
+        grid-template: 295px 256px 196px 196px/277px 249px;
+    }
+
+    .first_photo {
+        grid-column: 1;
+        height: 295px;
+        width: 277px;
+        background-image: url('../images/background_img/img_for_media_grid/big_wedding.png');
+        background-size: cover;
+
+
+        img {
+            display: none;
+        }
+    }
+
+    .second_photo {
+        grid-column: 1;
+        grid-row: 2;
+
+
+        img {
+            height: 256px;
+            width: 277px;
+        }
+    }
+
+    .third_photo {
+        grid-column: 2;
+        grid-row: 2;
+
+        img {
+            height: 256px;
+            width: 249px;
+        }
+    }
+
+    .fourh_photo {
+        grid-column: 2;
+        grid-row: 3;
+
+        img {
+            height: 196px;
+            width: 249px;
+        }
+    }
+
+    .fifth_photo {
+        grid-column: 1;
+        grid-row: 3;
+        background-image: url('../images/background_img/img_for_media_grid/small_wedding.png');
+        background-size: cover;
+
+        img {
+            display: none;
+        }
+    }
+
+    .sixth_photo {
+        grid-column: 2;
+        grid-row: 1;
+        background-image: url('../images/background_img/img_for_media_grid/many_plates.png');
+        background-size: cover;
+
+        img {
+            display: none;
+        }
+    }
+
+    .seventh_photo {
+        grid-column: 1/3;
+        grid-row: 4;
+
+        img {
+            height: 196px;
+            width: 565px;
+        }
+    }
+}
+
+@media all and (max-width:834px) {
+    .footer_content {
+        justify-content: center;
+        column-gap: 100px;
+        row-gap: 20px;
+    }
+
+    .last_p {
+        width: 237px;
+    }
+}
+
+@media all and (max-width:734px) {
+    .img_box+div {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:700px) {
+    .map {
+        width: 458px;
+        height: 290px;
+    }
+}
+
+@media all and (max-width:595px) {
+    .media_links {
+        margin: 0 28px;
+    }
+}

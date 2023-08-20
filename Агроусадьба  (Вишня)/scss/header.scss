@@ -1,0 +1,46 @@
+header {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: $backColorTopic;
+    padding: 10px 0;
+}
+
+.head_content {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 174px;
+}
+
+.img_box {
+    width: 54px;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+.img_box+div {
+    display: flex;
+    column-gap: 60px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+    div {
+        &:hover {
+            transform: scale(1.1);
+            a {
+                color: black;
+            }
+        }
+
+        a {
+            color: white;
+            @include textValue('Montserrat', 400, 20px);
+            text-decoration: none;
+        }
+    }
+}

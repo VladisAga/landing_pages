@@ -1,0 +1,21 @@
+.characteristics div {
+    align-self: flex-start;
+}
+
+.discription_of_product div {
+    align-self: flex-start;
+}
+
+.div_with_img {
+    padding-left: 130px;
+}
+
+.link_line {
+    max-width: 1000px;
+}
+
+@media all and (max-width:530px) {
+    .div_with_img {
+        padding-left: 20px;
+    }
+} 

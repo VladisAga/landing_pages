@@ -1,0 +1,54 @@
+.topic:hover {
+    transform: scale(1.2);
+    color: #bc474b;
+}
+
+.feedback_row::placeholder {
+    color: black;
+}
+
+.feedback_row:hover::placeholder {
+    color: #bc474b;
+    font-size: 15px;
+}
+
+.feedback_row:focus {
+    color: #bc474b;
+}
+
+.btn_1:hover {
+    transform: scale(1.1);
+}
+
+.start_footer nav div:hover {
+    transform: scale(1.2);
+}
+
+.end_footer div:hover a svg path {
+fill: #bc474b;
+}
+
+.tel_icon::before {
+    content: "";
+    background-image: url("/images/messengers/telegram.png");
+    display: inline-block;
+    background-size: 30px;
+    position: relative;
+    top: 7px;
+    width: 40px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.vib::before {
+    content: '';
+    background-image: url("/images/messengers/viber.png");
+}
+
+.what::before {
+    content: '';
+    background-image: url("/images/messengers/whatsapp.png");
+}
+
+
+

@@ -1,0 +1,74 @@
+header {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: #3DBFC1;
+  padding: 10px 0;
+}
+
+.head_content {
+  display: flex;
+  max-width: 1830px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.head_content div img {
+  width: 135px;
+  height: 100%;
+  display: inline-block;
+}
+
+.nav_in_head {
+  display: flex;
+  column-gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav_in_head div:hover {
+  transform: scale(1.1);
+}
+.nav_in_head div a {
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.free_exercise {
+  background-color: white;
+  border-radius: 20px;
+  width: 285px;
+  height: 79px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+  padding: 12px 0;
+  border: none;
+}
+.free_exercise:hover {
+  background-color: #C4C4C4;
+}
+.free_exercise:hover {
+  font-weight: 700;
+}
+.free_exercise a {
+  width: 285px;
+  height: 79px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+  padding-top: 24px;
+}
+
+/*# sourceMappingURL=header.css.map */

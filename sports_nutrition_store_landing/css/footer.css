@@ -1,0 +1,82 @@
+footer {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #1A1A25;
+}
+
+.content_foot {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.start_footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.in_foot {
+    align-items: flex-start;
+    column-gap: 50px;
+}
+
+.top_in_foot {
+    font-size: 16px;
+}
+
+.tel_foot {
+    color: rgba(133, 143, 164, 1);
+    margin: 0;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+.divider_foot {
+    margin-top: 28px;
+    border-bottom: 1px solid rgba(133, 143, 164, 0.15);
+}
+
+.middle_foot {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.banks {
+    display: flex;
+    column-gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.banks div img {
+    height: 16px;
+    align-self: center;
+}
+
+.last_bank {
+    padding-top: 4px;
+}
+
+.logo_footer {
+    padding-bottom: 2px;
+}
+
+.last_text {
+    color: rgba(133, 143, 164, 1);
+    margin: 0;
+    font-size: 11.3px;
+}
+
+.end_footer {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    padding: 10px 0 20px;
+}
+
+.end_footer div a img {
+    width: 20px;
+}

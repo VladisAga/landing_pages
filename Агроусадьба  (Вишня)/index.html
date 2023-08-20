@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="./images/favicon/favicon (2).ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./css/navbar.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="img_box"><img src="./images/logo.png" alt="logo"></div>
+            <div>
+                <ul class="nav-menu">
+                    <li class="nav-item we">
+                        <div class="topic"><a class="topic" href="#about_us_box">О нас</a></div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="topic"><a class="topic" href="#services_box">Услуги</a></div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="topic"><a class="topic" href="#gallery_box">Галерея</a></div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="topic"><a class="topic" href="#contacts_box">Контакты</a></div>
+                    </li>
+                    <li class="nav-item wer">
+                        <div class="topic"><a class="topic" href="#booking_box">Бронирование</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Агроусадьба «Вишня»<br>
+            <span>Лучший загородный отдых для Вас и ваших родных</span>
+        </h1>
+        <div class="big_photo"><img src="./images/backyard.png" alt="backyard"></div>
+        <div class="about_us_box" id="about_us_box">
+            <p>Об усадьбе</p>
+        </div>
+        <div class="about_us_content">
+            <div><img src="./images/chairs_about_us.png" alt="chairs"></div>
+            <div class="text_about_us">
+                <p>Наша усадьба подарит вам незабываемый отдых, о котором вы так давно мечтали!</p>
+                <p>Вы можете погрузиться в сельскую жизнь
+                    и отказаться от повседневных удобств, таких как доступ в интернет или мобильная связь.
+                    Также, возможен отдых за пределами городской суеты, но с предоставлением все тех же повседневных
+                    удобств, в которых многие из нас чувствуют постоянную необходимость. </p>
+                <p>В любом случае, посещение агроусадьбы не оставит никого равнодушным: вы всегда сможете насладиться
+                    природой, приятной компанией, песнями у костра, ароматным
+                    шашлыком или баней.</p>
+            </div>
+        </div>
+        <div class="services_box" id="services_box">
+            <p>Услуги</p>
+        </div>
+        <div class="services_content">
+            <div class="img_and_text">
+                <div class="box_2_photo">
+                    <div><img src="./images/services_block/bed_services.png" alt="bedroom"></div>
+                    <div class="block_after_photo first_after">
+                        <p>Чистые постели</p>
+                    </div>
+                </div>
+                <p>Проживание</p>
+            </div>
+            <div>
+                <div class="box_2_photo">
+                    <div><img src="./images/services_block/wedding_services.png" alt="wedding"></div>
+                    <div class="block_after_photo second_after">
+                        <p>Личный тамада</p>
+                    </div>
+                </div>
+                <p>Организация праздничных мероприятий</p>
+            </div>
+            <div>
+                <div class="box_2_photo">
+                    <div><img src="./images/services_block/fire_services.png" alt="wedding"></div>
+                    <div class="block_after_photo third_after">
+                        <p>Много места</p>
+                    </div>
+                </div>
+                <p>Лаунж зона</p>
+            </div>
+            <div>
+                <div class="box_2_photo">
+                    <div><img src="./images/services_block/playground_services.png" alt="wedding"></div>
+                    <div class="block_after_photo fourth_after">
+                        <p class="baby">Для ваших личинок</p>
+                    </div>
+                </div>
+                <p>Детская площадка</p>
+            </div>
+            <div>
+                <div class="box_2_photo">
+                    <div><img src="./images/services_block/woman_micro_services.png" alt="wedding"></div>
+                    <div class="block_after_photo fifth_after">
+                        <p class="business">Бизнес завтраки ланчи и бранчи </p>
+                    </div>
+                </div>
+                <p>Организация бизнес мероприятий</p>
+            </div>
+            <div>
+                <div class="box_2_photo">
+                    <div><img src="./images/services_block/bus_services.png" alt="wedding"></div>
+                    <div class="block_after_photo sixth_after">
+                        <p>Удобный и комфортный транспорт </p>
+                    </div>
+                </div>
+                <p>Трансфер</p>
+            </div>
+        </div>
+        <div class="gallery_box" id="gallery_box">
+            <p>Галерея</p>
+        </div>
+        <div class="gallery_content">
+            <div class="grid_box">
+                <div class="first_photo">
+                    <img src="./images/gallery_block/big_photo_wedding.png" alt="">
+                    <button type="button" class="btn btn-primary invisible_btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                    </button>
+                </div>
+                <div class="second_photo">
+                    <img src="./images/gallery_block/banquet.png" alt="">
+                    <button type="button" class="btn btn-primary invisible_btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">
+                    </button>
+                </div>
+                <div class="third_photo">
+                    <img src="./images/gallery_block/small_houses.png" alt="">
+                    <button type="button" class="btn btn-primary invisible_btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3">
+                    </button>
+                </div>
+                <div class="fourh_photo">
+                    <img src="./images/gallery_block/floor.png" alt="">
+                    <button type="button" class="btn btn-primary invisible_btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal4">
+                    </button>
+                </div>
+                <div class="fifth_photo">
+                    <img src="./images/gallery_block/small_photo_wedding.png" alt="">
+                    <button type="button" class="btn btn-primary invisible_btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal5">
+                    </button>
+                </div>
+                <div class="sixth_photo">
+                    <img src="./images/gallery_block/many_plates.png" alt="">
+                    <button type="button" class="btn btn-primary invisible_btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal6">
+                    </button>
+                </div>
+                <div class="seventh_photo">
+                    <img src="./images/gallery_block/pool.png" alt="">
+                    <button type="button" class="btn btn-primary invisible_btn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal7">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="contacts_box" id="contacts_box">
+            <p>Контакты</p>
+        </div>
+        <div class="contact_box">
+            <div class="contact_text_area">
+                <div>
+                    <div>
+                        <svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.8947 27H21.3684V23.25H25.0526V21.75H21.3684V18H19.8947V21.75H16.2105V23.25H19.8947V27ZM20.6316 30C18.593 30 16.8555 29.269 15.4192 27.807C13.9818 26.344 13.2632 24.575 13.2632 22.5C13.2632 20.425 13.9818 18.656 15.4192 17.193C16.8555 15.731 18.593 15 20.6316 15C22.6702 15 24.4081 15.731 25.8455 17.193C27.2818 18.656 28 20.425 28 22.5C28 24.575 27.2818 26.344 25.8455 27.807C24.4081 29.269 22.6702 30 20.6316 30ZM0 27V9L11.7895 0L23.5789 9V12.45C23.1123 12.3 22.6333 12.1875 22.1421 12.1125C21.6509 12.0375 21.1474 12 20.6316 12V10.5L11.7895 3.75L2.94737 10.5V24H10.4263C10.5 24.525 10.6105 25.0375 10.7579 25.5375C10.9053 26.0375 11.0895 26.525 11.3105 27H0Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <p>247980, г. Туров, ул. Кирова, 46</p>
+                </div>
+                <div>
+                    <div>
+                        <svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.4444 20.8333C24.5778 20.8333 22.5556 20.5 20.8444 19.8333H20.3778C19.9111 19.8333 19.6 20 19.2889 20.3333L15.8667 24C11.5111 21.5 7.77778 17.6667 5.6 13L9.02222 9.33333C9.48889 8.83333 9.64444 8.16667 9.33333 7.66667C8.86667 5.83333 8.55556 3.66667 8.55556 1.66667C8.55556 0.833333 7.77778 0 7 0H1.55556C0.777778 0 0 0.833333 0 1.66667C0 17.3333 11.8222 30 26.4444 30C27.2222 30 28 29.1667 28 28.3333V22.5C28 21.6667 27.2222 20.8333 26.4444 20.8333ZM3.11111 3.33333H5.44444C5.6 4.83333 5.91111 6.33333 6.22222 7.66667L4.35556 9.66667C3.73333 7.66667 3.26667 5.5 3.11111 3.33333ZM24.8889 26.6667C22.8667 26.5 20.8444 26 18.9778 25.3333L20.8444 23.3333C22.0889 23.6667 23.4889 24 24.8889 24V26.6667Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <p><a href="tel:+375291111111"> +375 (29) 111-11-11</a></p>
+                </div>
+                <div>
+                    <div>
+                        <svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.2631 0.00436588C10.8956 0.033432 5.80562 0.429106 2.95872 3.08537C0.841062 5.21938 0.101679 8.37446 0.0150185 12.2759C-0.0568916 16.1632 -0.143553 23.4635 6.77549 25.4513V28.4788C6.77549 28.4788 6.73216 29.6902 7.51948 29.9387C8.48934 30.2509 9.04157 29.3189 9.9635 28.3175L11.6829 26.3401C16.417 26.7405 20.0429 25.8179 20.4605 25.681C21.4212 25.3687 26.8319 24.6655 27.7161 17.3643C28.6232 9.82402 27.2745 5.07312 24.8397 2.9241H24.8249C24.0901 2.23589 21.1372 0.0474962 14.5399 0.0231182C14.5399 0.0231182 14.0504 -0.00969836 13.2631 0.00436588ZM13.3442 2.12431C14.0163 2.11963 14.4247 2.14869 14.4247 2.14869C20.0088 2.16369 22.6741 3.87297 23.3028 4.44866C25.3532 6.23576 26.4097 10.5188 25.6362 16.8139C24.9014 22.9178 20.5131 23.3041 19.7009 23.5676C19.3551 23.6801 16.1616 24.4808 12.1383 24.2174C12.1383 24.2174 9.14206 27.8947 8.20539 28.8417C8.05696 29.0076 7.88364 29.0564 7.77301 29.032C7.61444 28.9926 7.5665 28.7929 7.57572 28.5191L7.6043 23.4945C1.73625 21.8442 2.08197 15.6175 2.14466 12.365C2.21657 9.11236 2.81674 6.45141 4.60343 4.64931C7.00873 2.43748 11.3307 2.13932 13.3423 2.12431H13.3442ZM13.7867 5.37597C13.7384 5.37547 13.6905 5.3847 13.6457 5.40313C13.601 5.42155 13.5602 5.44881 13.5259 5.48333C13.4915 5.51784 13.4642 5.55893 13.4455 5.60423C13.4268 5.64953 13.4171 5.69814 13.417 5.74726C13.417 5.95729 13.5848 6.12325 13.7867 6.12325C14.7008 6.10557 15.6093 6.27211 16.4598 6.61327C17.3103 6.95443 18.0859 7.46345 18.7421 8.11099C20.0816 9.43397 20.7343 11.2117 20.7592 13.536C20.7592 13.7414 20.9224 13.912 21.1289 13.912V13.897C21.2262 13.8973 21.3197 13.8584 21.389 13.7888C21.4582 13.7193 21.4976 13.6247 21.4986 13.5257C21.5434 12.4317 21.3689 11.3398 20.9859 10.3164C20.6028 9.29306 20.0191 8.35961 19.2703 7.5728C17.8109 6.12231 15.9615 5.37503 13.7867 5.37503V5.37597ZM8.92726 6.23576C8.6663 6.19698 8.40016 6.25026 8.17312 6.38672H8.15376C7.62666 6.70095 7.15183 7.0981 6.74691 7.56342C6.4104 7.9591 6.22786 8.35946 6.17992 8.74482C6.15134 8.97453 6.1707 9.20425 6.238 9.42365L6.26197 9.43866C6.64088 10.5713 7.13596 11.6608 7.74074 12.6866C8.51979 14.1276 9.47852 15.4604 10.5932 16.6517L10.6264 16.7005L10.6789 16.7399L10.7121 16.7792L10.7508 16.813C11.9265 17.9499 13.2401 18.9296 14.6598 19.728C16.2824 20.6263 17.267 21.051 17.8579 21.2273V21.2367C18.0313 21.2901 18.1889 21.3145 18.3475 21.3145C18.8511 21.277 19.3279 21.069 19.7018 20.7238C20.1572 20.3119 20.5434 19.827 20.845 19.2883V19.2789C21.128 18.737 21.0321 18.2241 20.6237 17.8772C19.8058 17.1501 18.9213 16.5042 17.9824 15.9485C17.3536 15.6016 16.7147 15.8116 16.4557 16.1632L15.9035 16.8711C15.6204 17.2227 15.106 17.174 15.106 17.174L15.0912 17.1834C11.2551 16.1867 10.2318 12.2365 10.2318 12.2365C10.2318 12.2365 10.1838 11.6992 10.5388 11.4255L11.2302 10.8591C11.5612 10.5854 11.7917 9.93653 11.4367 9.29614C10.8941 8.33991 10.2605 7.44017 9.54494 6.60987C9.38852 6.41412 9.16907 6.28094 8.92541 6.23388L8.92726 6.23576ZM14.4247 7.34965C13.9351 7.34965 13.9351 8.10161 14.4293 8.10161C15.038 8.11166 15.6388 8.2436 16.1974 8.48991C16.756 8.73622 17.2613 9.09206 17.6846 9.5371C18.0707 9.97029 18.3674 10.4779 18.5572 11.0298C18.7469 11.5818 18.8257 12.1668 18.7891 12.7503C18.7908 12.8491 18.8304 12.9432 18.8995 13.0126C18.9686 13.082 19.0617 13.1211 19.1588 13.1216L19.1735 13.1413C19.2713 13.1406 19.365 13.1007 19.4341 13.0304C19.5033 12.96 19.5425 12.8648 19.5432 12.7653C19.5764 11.2754 19.121 10.0256 18.2276 9.02423C17.3297 8.02286 16.0768 7.46122 14.4772 7.34965H14.4247ZM15.0304 9.37115C14.5261 9.35614 14.5067 10.1231 15.0064 10.1381C16.2215 10.2019 16.8115 10.8263 16.889 12.1109C16.8907 12.2084 16.9298 12.3013 16.9981 12.3698C17.0663 12.4384 17.1582 12.477 17.2541 12.4775H17.2688C17.3181 12.4753 17.3665 12.4632 17.4111 12.4418C17.4558 12.4205 17.4958 12.3903 17.5288 12.353C17.5619 12.3157 17.5873 12.2721 17.6036 12.2248C17.6199 12.1774 17.6267 12.1272 17.6238 12.0771C17.5371 10.4025 16.6391 9.45928 15.0451 9.37208H15.0304V9.37115Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <p><a href="tel:+375291222222"> +375 (29) 122-22-22</a></p>
+                </div>
+                <div>
+                    <div>
+                        <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.4001 10L5.20007 16.75L11.5001 19M23.4001 10L11.5001 19M23.4001 10L17.8001 25.75L11.5001 19"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M15 31C22.7322 31 29 24.2845 29 16C29 7.7155 22.7322 1 15 1C7.2678 1 1 7.7155 1 16C1 24.2845 7.2678 31 15 31Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <p><a href="#">@usadba_vishnya</a></p>
+                </div>
+                <div>
+                    <div>
+                        <svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.8 30C2.03 30 1.37107 29.6331 0.8232 28.8994C0.2744 28.1644 0 27.2813 0 26.25V3.75C0 2.71875 0.2744 1.83625 0.8232 1.1025C1.37107 0.3675 2.03 0 2.8 0H25.2C25.97 0 26.6294 0.3675 27.1782 1.1025C27.7261 1.83625 28 2.71875 28 3.75V26.25C28 27.2813 27.7261 28.1644 27.1782 28.8994C26.6294 29.6331 25.97 30 25.2 30H2.8ZM25.2 7.5L14.735 16.2656C14.6183 16.3594 14.4956 16.4294 14.3668 16.4756C14.2389 16.5231 14.1167 16.5469 14 16.5469C13.8833 16.5469 13.7611 16.5231 13.6332 16.4756C13.5044 16.4294 13.3817 16.3594 13.265 16.2656L2.8 7.5V26.25H25.2V7.5ZM14 13.125L25.2 3.75H2.8L14 13.125ZM2.8 7.96875V5.20313V5.25V5.22563V7.96875Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <p> usadba.vishnya@mail.ru</p>
+                </div>
+                <p class="work_time">
+                    Время работы:<br>
+                    ПН-СБ 08:00-17:30<br>
+                    ВС 10:00-19:30
+                </p>
+            </div>
+            <div>
+                <iframe class="map"
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A9342264c6831318e50f576702f819a80a7d3fdffce6189f8b7da626ed7fe0ecd&amp;source=constructor"
+                    width="558" height="414.56" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="booking_box" id="booking_box">
+            <p>Бронирование</p>
+        </div>
+        <div class="booking_area">
+            <form>
+                <div><input class="input_name" type="text" value="" placeholder="Имя"></div>
+                <div><input class="input_service" type="text" value="" placeholder="Услуга"></div>
+                <div><input class="input_contact" type="tel" value="" placeholder="Контактный телефон/почта"></div>
+                <div><input class="btn" type="submit" value="Уточнить дату"></div>
+            </form>
+        </div>
+
+        <div class="qwe">
+            <div>
+                <a href="#"><svg class="strelka-top-2" viewBox="0 0 9 14">
+                        <path class="svg-strelka"
+                            d="M6.660,8.922 L6.660,8.922 L2.350,13.408 L0.503,11.486 L4.813,7.000 L0.503,2.515 L2.350,0.592 L8.507,7.000 L6.660,8.922 Z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_content">
+            <div class="logo_and_tel">
+                <div class="img_box_foot"><img src="./images/logo.png" alt="logo"></div>
+                <div>
+                    <p><a href="tel:+375291111111">+375 (29) 111-11-11</a></p>
+                    <p><a href="tel:+375292222222">+375 (29) 222-22-22</a></p>
+                </div>
+            </div>
+            <div class="media_links">
+                <div>
+                    <a href="#">
+                        <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="color_svg"
+                                d="M18.7651 16.5168C18.3932 16.1 17.9754 15.7297 17.5204 15.4135C19.3553 13.9443 20.6413 11.8614 21.1591 9.51991C21.198 9.35047 21.2041 9.17472 21.177 9.00283C21.1499 8.83094 21.0903 8.6663 21.0014 8.51844C20.9125 8.37058 20.7963 8.24242 20.6593 8.14138C20.5223 8.04033 20.3674 7.96839 20.2034 7.92973C20.0395 7.89106 19.8697 7.88643 19.704 7.9161C19.5383 7.94578 19.38 8.00916 19.238 8.1026C19.0961 8.19604 18.9735 8.31768 18.8773 8.4605C18.781 8.60331 18.713 8.76446 18.6773 8.93464C18.4364 10.0301 17.9677 11.058 17.3039 11.9466C16.64 12.8351 15.797 13.563 14.8336 14.0795V9.22991C14.8256 9.13308 14.8068 9.03754 14.7776 8.94518C14.769 8.86887 14.7541 8.79346 14.7331 8.71977C14.6788 8.59937 14.6072 8.48824 14.5205 8.39023C14.4976 8.36386 14.4862 8.32695 14.462 8.30059C14.3688 8.21148 14.2633 8.13728 14.1489 8.08045C14.1158 8.062 14.0916 8.03168 14.0573 8.01718C13.96 7.98343 13.8591 7.96175 13.7569 7.95259C13.6936 7.9335 13.6289 7.91983 13.5635 7.91173L12.7311 7.90909H12.7273C12.4291 7.90691 12.1397 8.01377 11.9102 8.21086C11.6806 8.40795 11.5255 8.68262 11.4723 8.9865C11.4191 9.29037 11.4711 9.60395 11.6192 9.87201C11.7672 10.1401 12.0019 10.3454 12.2818 10.4519V16.8978C10.2649 14.7295 8.92934 11.9795 8.45091 9.00977C8.39454 8.66506 8.20826 8.35767 7.93306 8.1552C7.65786 7.95274 7.31628 7.8718 6.98345 7.93018C6.65063 7.98857 6.35383 8.18149 6.15835 8.46652C5.96287 8.75155 5.88472 9.10534 5.94109 9.45005C6.68479 14.0409 9.15647 18.1387 12.8138 20.8444C12.8661 20.8766 12.9205 20.9048 12.9767 20.9288C13.021 20.9555 13.0669 20.9793 13.1142 21C13.256 21.0588 13.4069 21.0905 13.5596 21.0935C13.747 21.0911 13.9314 21.0452 14.0993 20.9591C14.112 20.9525 14.126 20.9565 14.1387 20.9499C14.2512 20.8889 14.3542 20.8106 14.4442 20.7179C14.4633 20.6994 14.4747 20.6783 14.4925 20.6585C14.5747 20.5652 14.6433 20.4599 14.6962 20.3461C14.7137 20.3087 14.7294 20.2705 14.7433 20.2315C14.7992 20.0862 14.8293 19.9317 14.8324 19.7754V16.9729C15.6215 17.2125 16.3327 17.6705 16.8891 18.2977L18.9853 20.6665C19.2135 20.9241 19.5311 21.0773 19.8684 21.0924C20.2056 21.1075 20.5349 20.9832 20.7836 20.7469C21.0324 20.5105 21.1803 20.1815 21.1949 19.8322C21.2095 19.4829 21.0895 19.1419 20.8613 18.8843L18.7651 16.5168ZM17.9111 0H10.1016C2.26545 0 0 2.34373 0 10.4492V18.5376C0 26.6536 2.26291 29 10.0889 29H17.8984C25.7345 29 28 26.6563 28 18.5508V10.4624C28 2.34636 25.7371 0 17.9111 0ZM25.4545 18.5508C25.4545 25.1944 24.3244 26.3636 17.8971 26.3636H10.0902C3.67436 26.3636 2.54545 25.1931 2.54545 18.5363V10.4505C2.54545 3.80559 3.67564 2.63636 10.1029 2.63636H17.9111C24.3256 2.63636 25.4545 3.80691 25.4545 10.4637V18.5508Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="color_svg"
+                                d="M14 7.54C12.6709 7.54 11.3717 7.9482 10.2666 8.71297C9.16147 9.47775 8.30015 10.5647 7.79153 11.8365C7.28291 13.1083 7.14983 14.5077 7.40912 15.8578C7.66842 17.2079 8.30843 18.4481 9.24824 19.4215C10.1881 20.3948 11.3854 21.0577 12.689 21.3263C13.9925 21.5948 15.3437 21.457 16.5716 20.9302C17.7996 20.4034 18.8491 19.5113 19.5875 18.3668C20.3259 17.2222 20.72 15.8766 20.72 14.5C20.72 12.6541 20.012 10.8838 18.7518 9.57854C17.4915 8.27328 15.7823 7.54 14 7.54ZM14 19.14C13.1139 19.14 12.2478 18.8679 11.511 18.358C10.7743 17.8482 10.2001 17.1235 9.86102 16.2757C9.52194 15.4278 9.43322 14.4949 9.60608 13.5948C9.77894 12.6947 10.2056 11.8679 10.8322 11.219C11.4587 10.5701 12.257 10.1282 13.126 9.94916C13.995 9.77012 14.8958 9.86201 15.7144 10.2132C16.533 10.5644 17.2327 11.1591 17.725 11.9222C18.2173 12.6852 18.48 13.5823 18.48 14.5C18.4763 15.7294 18.0031 16.9074 17.1638 17.7768C16.3244 18.6461 15.187 19.1362 14 19.14ZM20.16 0H7.84C5.7607 0 3.76657 0.855497 2.29628 2.37829C0.825998 3.90109 0 5.96644 0 8.12V20.88C0 23.0336 0.825998 25.0989 2.29628 26.6217C3.76657 28.1445 5.7607 29 7.84 29H20.16C22.2393 29 24.2334 28.1445 25.7037 26.6217C27.174 25.0989 28 23.0336 28 20.88V8.12C28 5.96644 27.174 3.90109 25.7037 2.37829C24.2334 0.855497 22.2393 0 20.16 0ZM25.76 20.88C25.76 21.6417 25.6152 22.3959 25.3337 23.0996C25.0523 23.8033 24.6398 24.4426 24.1198 24.9812C23.5998 25.5198 22.9825 25.947 22.303 26.2385C21.6236 26.53 20.8954 26.68 20.16 26.68H7.84C7.1046 26.68 6.3764 26.53 5.69697 26.2385C5.01755 25.947 4.40021 25.5198 3.8802 24.9812C3.36019 24.4426 2.9477 23.8033 2.66627 23.0996C2.38485 22.3959 2.24 21.6417 2.24 20.88V8.12C2.24 6.58174 2.83 5.10649 3.8802 4.01878C4.93041 2.93107 6.35479 2.32 7.84 2.32H20.16C20.8954 2.32 21.6236 2.47002 22.303 2.7615C22.9825 3.05298 23.5998 3.4802 24.1198 4.01878C24.6398 4.55736 25.0523 5.19675 25.3337 5.90044C25.6152 6.60412 25.76 7.35833 25.76 8.12V20.88ZM22.96 6.96C22.96 7.30414 22.8615 7.64055 22.6769 7.92669C22.4923 8.21283 22.2299 8.43585 21.9229 8.56755C21.6159 8.69925 21.2781 8.7337 20.9522 8.66657C20.6264 8.59943 20.327 8.43371 20.0921 8.19037C19.8571 7.94702 19.6971 7.63698 19.6323 7.29946C19.5675 6.96193 19.6007 6.61207 19.7279 6.29413C19.855 5.97619 20.0704 5.70444 20.3466 5.51324C20.6229 5.32205 20.9477 5.22 21.28 5.22C21.7256 5.22 22.1529 5.40332 22.4679 5.72963C22.783 6.05595 22.96 6.49852 22.96 6.96Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M27 8.5V20.5C27 22.4891 26.2391 24.3968 24.8847 25.8033C23.5302 27.2098 21.6932 28 19.7778 28H8.22222C6.30677 28 4.46977 27.2098 3.11534 25.8033C1.76091 24.3968 1 22.4891 1 20.5V8.5C1 6.51088 1.76091 4.60322 3.11534 3.1967C4.46977 1.79018 6.30677 1 8.22222 1H19.7778C21.6932 1 23.5302 1.79018 24.8847 3.1967C26.2391 4.60322 27 6.51088 27 8.5Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M11.9 14.1142C11.1287 14.1142 10.3746 14.3521 9.73328 14.7979C9.09193 15.2437 8.59205 15.8773 8.29687 16.6187C8.00169 17.36 7.92446 18.1757 8.07494 18.9627C8.22542 19.7497 8.59686 20.4726 9.14229 21.04C9.68771 21.6074 10.3826 21.9938 11.1391 22.1504C11.8957 22.3069 12.6798 22.2266 13.3925 21.9195C14.1051 21.6124 14.7142 21.0924 15.1427 20.4252C15.5713 19.7581 15.8 18.9737 15.8 18.1712V6C16.2329 7.35236 17.88 10.0571 21 10.0571"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <p class="last_p">@2023 Усадьба Вишня</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img class="img_modal" src="./images/modal_img/big_wedding.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img class="img_modal" src="./images/modal_img/banquet.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img class="img_modal" src="./images/modal_img/small_houses.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img class="img_modal" src="./images/modal_img/floor.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img class="img_modal" src="./images/modal_img/small_wedding.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img class="img_modal" src="./images/modal_img/many_plates.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <img class="img_modal" src="./images/modal_img/pool.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <script src="./js/navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

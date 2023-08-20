@@ -1,0 +1,66 @@
+footer {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #612549;
+}
+
+.foot_content {
+    margin: 0 auto;
+    max-width: 1560px;
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0 40px;
+    flex-wrap: wrap;
+}
+
+.bank_and_job {
+    display: flex;
+    column-gap: 185px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+
+        p {
+            @include textValue('PT Serif', 400, 28px);
+            align-self: flex-start;
+
+            &:first-child {
+                margin-bottom: 16px;
+                font-size: 40px;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.web {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+
+    p {
+        color: white;
+        @include textValue('PT Serif', 400, 40px);
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+}
+
+@media all and (max-width:1176px) {
+    .foot_content {
+        justify-content: center;
+    }
+}
